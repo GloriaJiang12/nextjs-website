@@ -1,3 +1,9 @@
+/*
+ * @Author: wj.jiang
+ * @Date: 2023-07-26 14:47:03
+ * @LastEditors: wj.jiang
+ * @LastEditTime: 2023-07-26 14:58:44
+ */
 import Link from "next/link";
 
 export default function Header() {
@@ -25,7 +31,7 @@ export default function Header() {
       <ul className="flex justify-between p-5">
         {navList.map((t) => (
           <Link href={t.url} key={t.id}>
-            <li className=" bg-red-400 p-5 rounded-lg">
+            <li className=" bg-gray-400 p-5 rounded-lg">
               {t.title}
             </li>
           </Link>
